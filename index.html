@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Login | Sign Up Page</title>
+</head>
+<body>
+    <div class="menu-bar">
+        <h3 class="logo"><a href="$">Parzival Concept</a></h3>
+   <ul>
+    <li class="active"><a href="$"><i class="fa fa-home"></i>Home</a></li>
+    <li><a href="$"><i class="fa fa-user"></i>About Us</a> </li>
+    <li><a href="$"><i class="fa fa-clone"></i>Services</a></li>   
+    <li><a href="$"><i class="fa fa-phone"></i>Contact</a></li>
+    <li><a href="index.html"><i class="fa fa-right-to-bracket"></i>Login</a></li>
+   </ul> 
+     </div>
+
+     <div class="hero">
+     </div>
+  <div class="form-box">
+           <div class="button-box">
+                <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                    <button type="button" class="toggle-btn" onclick="register()">Register</button>
+                </div>
+                 <div class="brands">
+            <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-google"></i>
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+            <form id="login" class="input-grp">
+        <input class="input-field" type="text" placeholder="User Id" required>
+        <input class="input-field" type="password" placeholder="Enter Password" required>
+         <input type="checkbox" class="check-box"> <span>Rememeber Me</span>
+           <button type="submit" class="submit-btn">Login</button>
+     </form>
+
+      <form id="register" class="input-grp">
+        <input class="input-field" type="text" placeholder="User Id" required>
+        <input class="input-field" type="email" placeholder="Email Id" required>
+        <input class="input-field" type="password" placeholder="Enter Password" required>
+         <input type="checkbox" class="check-box"> <span>I agree to the terms and conditions</span>
+           <button type="submit" class="submit-btn">Register</button>
+     </form>
+        </div>   
+    <script>
+   var x = document.getElementById("login");
+   var y = document.getElementById("register");
+   var z = document.getElementById("btn");
+
+        function register(){
+            x.style.left = "-400px"
+            y.style.left = "50px"
+            z.style.left = "110px"
+        }
+        function login(){
+            x.style.left = "50px"
+            y.style.left = "450px"
+            z.style.left = "0"
+        }
+    </script>
+</body>
+
+
+           
